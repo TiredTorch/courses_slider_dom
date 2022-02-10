@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body section {
+  width: 90vw;
+  margin: 5vh 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body section button {
+  width: 20vw;
+  height: 10vh;
+  font-size: 1.3rem;
+}
+
+body section .slider {
+  overflow: hidden;
+  margin: 3vh 10vw;
+  width: 70vw;
+  height: 50vh;
+  border: 3px solid black;
+}
+
+body section .slider .slider-line {
+  -webkit-transition: left .3s ease-in-out;
+  transition: left .3s ease-in-out;
+  position: relative;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 360vw;
+}
+
+body section .slider .slider-line .slider-item {
+  width: 70vw;
+  height: 50vh;
+}
