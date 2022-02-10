@@ -1,8 +1,8 @@
 const pictures = [
   'http://placekitten.com/500/300',
-  'http://placekitten.com/500/500',
-  'http://placekitten.com/500/700',
-  'http://placekitten.com/700/700',
+  'http://placekitten.com/3000/1000',
+  'http://placekitten.com/400/100',
+  'http://placekitten.com/6000/2000',
 ];
 
 const fillSlider = () => {
@@ -12,7 +12,7 @@ const fillSlider = () => {
     const newImg = document.createElement('img');
 
     newImg.src = element;
-    newImg.alt = 'slider-image';
+    newImg.alt = `${element}-image`;
     newImg.className = 'slider-item';
     
     root.append(newImg);

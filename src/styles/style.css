@@ -20,18 +20,35 @@ body section {
       flex-wrap: wrap;
 }
 
-body section button {
-  width: 20vw;
-  height: 10vh;
-  font-size: 1.3rem;
-}
-
 body section .slider {
   overflow: hidden;
-  margin: 3vh 10vw;
+  margin: 3vh auto;
   width: 70vw;
   height: 50vh;
   border: 3px solid black;
+}
+
+body section .slider .buttons {
+  height: 50vh;
+  width: 70vw;
+  z-index: 30;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body section .slider .buttons button {
+  background-color: rgba(255, 255, 255, 0.185);
+  height: 50vh;
+  width: 10vw;
+  border: 0;
+  border-radius: 0;
+  font-size: 7vw;
+  color: #1ef1f1;
 }
 
 body section .slider .slider-line {
@@ -46,6 +63,8 @@ body section .slider .slider-line {
 }
 
 body section .slider .slider-line .slider-item {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 70vw;
   height: 50vh;
 }
